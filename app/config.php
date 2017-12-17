@@ -3,15 +3,15 @@
 *Configuracion de la base de datos
 -----------------------------------*/
 //database server
-define('SERVER', $OPENSHIFT_MYSQL_DB_HOST);
+define('SERVER', "mysql://mysql:3306/");
 //database port
-define('PORT', $OPENSHIFT_MYSQL_DB_PORT);
+define('PORT', "3306");
 //database login name
-define('USER', "adminQCadZQk");
+define('USER', "userE2I");
 //database login password
-define('PASS', "VsGQn4mk4bI7");
+define('PASS', "svEyMVW1IwagsWKA");
 //database name
-define('DATABASE', "appcontact");
+define('DATABASE', "contactdb");
 /*Fin configuracion de la base de datos
 -----------------------------------*/
 define('DOCUMENT_ROOT',$_SERVER["DOCUMENT_ROOT"]."/");
