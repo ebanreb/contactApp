@@ -1,0 +1,177 @@
+@media (max-width: 1024px) {
+
+	div#cabeceraIni{width: 100%;padding: 0px 10px;}
+	div#cabecera{width: 100%;padding: 0px 10px;}
+   
+}
+@media (max-width: 1023px) {
+
+.nicescroll-rails{z-index: 20 !important;}
+
+.contenido{padding-top: 50px;}
+
+/*
+==========>>PORTADA
+*/
+	.backCab{border-bottom: solid 1px #111;}
+    .container-fluid{width: 100%;}
+
+    div#info{width: 100%;}
+
+    /*div#cabeceraIni{width: 100%;}*/
+
+    a#recPass{font-size: small;}
+
+    div.intro{margin: 0px;border-radius: 0px;border-bottom: solid 1px #1A1A1A;border-top: solid 1px #616161;}
+
+    div#formRegistro{width: 100%;border-radius: 0px; border-top: solid 1px #616161;margin-bottom: 0px;}
+
+    div#formVf{width: 100%;border-radius: 0px; border-top: solid 1px #616161;margin-bottom: 0px;}
+
+/*
+==========>>INICIO
+*/
+	/*div#cabecera{width: 100%;}*/
+
+	.navbar-header{display: block; float: right;}
+    
+    .tx-menu{display: inline-block;}
+
+	ul.dropdown-menu{float: none;margin: 0;display: none;position: fixed;top: 50px;left:0px;width: 100%;box-shadow: 0px 0px 4px rgba(53,170,71,1);}
+	ul.dropdown-menu li:hover > ul#solicitudesRec{display: none;}
+	ul.dropdown-menu li{
+		display:block;
+		height: auto;
+		padding-left: 0;
+		background-color: rgb(55, 59, 62);
+  		z-index: 98;
+	}
+	ul.dropdown-menu li:before {
+	  display: none;
+	}
+
+	ul.dropdown-menu li a{
+	  display: block;
+	  padding: 12px 8px;
+	  border:0;
+      border-radius: 0 0;
+	  border-top:1px solid #222;
+	  border-bottom:1px solid #616161;
+      width: auto;
+      text-align: inherit;
+	}
+
+	ul.dropdown-menu li a:hover{background-color: #333 !important;}
+
+	/*div.us-box{display: none;}*/
+
+    .dNone{display: none !important;}
+	.dBlock{display: block !important;}
+
+	/*.sidebar-nav{
+	  width: 35%;
+	}
+
+	div#chat {
+		width:65%;
+	}*/
+
+	/*div#chat .panel-footer{position: absolute;bottom: 0;width: 100%;}*/
+
+/*
+==========>>CONFIGURACION
+*/
+div#cnfPanel{width:100%;border-radius: 0px; border-top: solid 1px #616161;margin-bottom: 0px;}
+/*
+==========>>SOLICITUDES
+*/
+div#solPanel{width:100%;border-radius: 0px; border-top: solid 1px #616161;margin-bottom: 0px;}
+
+}
+
+@media (max-width: 799px){
+  div.us-box{display: none;}
+}
+
+@media (max-width: 767px) {
+
+    .sidebar-nav{
+	  background-color: #CCC;
+	  width: 100%;
+	  float: none;
+	  height: 100%;
+	  padding: 0px;
+	  padding-top:50px; 
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 19;
+	}
+
+	div#chat {
+		float: none; 
+		width:100%;
+		height: 100%;
+		padding: 0px;
+		padding-top: 100px;
+		padding-bottom:34px; 
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 19;
+		background-color: #CCC;
+		display: none;
+	}
+
+	div#chat .panel-footer{position: absolute;bottom: 0;width: 100%;height: 34px;}
+	.textareMsg{height: 34px;}
+
+}
+
+@media (max-width: 640px) {
+
+    div#main{width: 250px;}
+    div#results{width: 250px;}
+
+}
+
+@media (max-width: 480px) {
+    
+    
+
+    div#formLogin{position:fixed;width: 100%;left: 0;}
+
+    div#newPass{position: fixed;width: 100%;border-radius: 0;top: 0;left: 0;
+	    -moz-transform: none;
+	    -webkit-transform: none;
+	    transform: none;
+    }
+    button#closeNewPass, button#enviarNewPass{width: 49%;}
+    button#acNewPass{margin-left: 0; margin-top: 10px; float: none; width: 100%;}
+
+    div#modPC{position: fixed;width: 100%;border-radius: 0;top: 0;left: 0;
+	    -moz-transform: none;
+	    -webkit-transform: none;
+	    transform: none;
+    }
+    button#closeModPC, button#enviarModPC{width: 49%;}
+
+    div#bajaCuenta{position: fixed;width: 100%;border-radius: 0;top: 0;left: 0;
+	    -moz-transform: none;
+	    -webkit-transform: none;
+	    transform: none;
+    }
+    button#closeBj, button#enviarBj{width: 49%;}
+
+    div#main{width: 200px;}
+    div#results{width: 200px;}
+
+    .drop-files-container { border: 5px dashed #ccc; width: 100%; min-height: 200px; margin: 20px auto;position: relative;}
+
+}
+
+@media (max-width: 479px) {
+
+    div#main{display: none;}
+
+}

@@ -1,0 +1,29 @@
+#Options +FollowSymlinks
+RewriteEngine on
+
+RewriteBase /
+
+# Redirigir el dominio sin www a www  
+#RewriteCond %{HTTP_HOST} ^appcontact-xanela.rhcloud.com$ [NC]  
+#RewriteRule ^(.*)$ http://www.appcontact-xanela.rhcloud.com/$1 [R=301,QSA,L]
+
+RewriteCond %{HTTP_HOST} ^www.appcontact-xanela.rhcloud.com$ [NC]
+RewriteRule ^(.*)$ http://appcontact-xanela.rhcloud.com/$1 [L,R=301]
+
+
+#Options -Indexes +FollowSymlinks
+#### CASOS GENERALES de URLs amigables ####
+RewriteCond %{SCRIPT_FILENAME} !-d 
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+
+#4 variables
+Rewriterule ^(.*),(.*)/(.*),(.*)/(.*),(.*)/(.*),(.*)/$ index.php?$1=$2&$3=$4&$5=$6&$7=$8 [L,NC]
+#3 variables
+Rewriterule ^(.*),(.*)/(.*),(.*)/(.*),(.*)/$ index.php?$1=$2&$3=$4&$5=$6 [L,NC]
+#2 variables
+Rewriterule ^(.*),(.*)/(.*),(.*)/$ index.php?$1=$2&$3=$4 [L,NC]
+#1 variable
+Rewriterule ^(.*),(.*)/$ index.php?$1=$2 [L,NC]
+
+Rewriterule ^action/(.*)/$ app/service.php?tag=$1 [L,NC]
