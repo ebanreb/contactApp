@@ -3,7 +3,7 @@
 *Configuracion de la base de datos
 -----------------------------------*/
 //database server
-define('SERVER', "mysql://mysql:3306/");
+define('SERVER', "mysql.conta-app.svc");
 //database port
 define('PORT', "3306");
 //database login name
