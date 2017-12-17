@@ -7,8 +7,8 @@ RewriteBase /
 #RewriteCond %{HTTP_HOST} ^appcontact-xanela.rhcloud.com$ [NC]  
 #RewriteRule ^(.*)$ http://www.appcontact-xanela.rhcloud.com/$1 [R=301,QSA,L]
 
-RewriteCond %{HTTP_HOST} ^www.appcontact-xanela.rhcloud.com$ [NC]
-RewriteRule ^(.*)$ http://appcontact-xanela.rhcloud.com/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.contact-conta-app.a3c1.starter-us-west-1.openshiftapps.com$ [NC]
+RewriteRule ^(.*)$ http://contact-conta-app.a3c1.starter-us-west-1.openshiftapps.com//$1 [L,R=301]
 
 
 #Options -Indexes +FollowSymlinks
